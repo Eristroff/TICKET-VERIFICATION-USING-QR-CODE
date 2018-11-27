@@ -1,0 +1,34 @@
+<?php
+	if(isset($_POST['submit'])){
+		$phone=$_POST['phone'];
+
+		$to='contact@ujjawalpackersmovers.com';
+		$subject='Quick Enquiry';
+		$message="Phone: ".$phone;
+
+		if(mail($to, $subject, $message)){
+			echo "<h1>Sent Sucessfully! Thankyou"." ".$phone.", We will contact you shortly!</h1>";
+		}
+		else{
+			echo "something went wrong!";
+		}<!-- Google Code for Get a Quote Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 851297402;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "Df-oCKnOnHMQ-oj3lQM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/851297402/?label=Df-oCKnOnHMQ-oj3lQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+	}
+?>
